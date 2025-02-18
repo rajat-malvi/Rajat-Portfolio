@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate from React Router v6
+import CursorImitator from "./CursorImitator";
 // import logo from "../assets/portfolio.jpeg"; // Corrected to use relative path
 
 const About = () => {
@@ -14,16 +15,16 @@ const About = () => {
     window.open("/resume", "_blank"); // Open resume in a new tab
   };
 
-  const roles = ["Data Scientist", "Machine Learning", "Software Developer"];
-  const [currentRole, setCurrentRole] = useState(0);
+  // const roles = ["Data Scientist", "Machine Learning", "Software Developer"];
+  // const [currentRole, setCurrentRole] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentRole((prevRole) => (prevRole + 1) % roles.length);
-    }, 3000); // Change role every 2 seconds
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentRole((prevRole) => (prevRole + 1) % roles.length);
+  //   }, 3000); // Change role every 2 seconds
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-evenly bg-transparent p-6 h-[80vh]">
@@ -32,10 +33,10 @@ const About = () => {
         <h1 className="text-4xl font-bold text-white mb-2">Namaste 🙏, I'm</h1>
         <h2 className="text-3xl font-semibold text-blue-300 mb-2">Rajat Malviya</h2>
         <h3 className="text-xl font-medium text-gray-300 mb-4">
-          Sophomore at Sitare University | {roles[currentRole]}
+          <CursorImitator> </CursorImitator>
         </h3>
         <p className="text-gray-300 leading-relaxed">
-          Welcome to my portfolio! I am currently interning with Lendingkart. I
+          Welcome to my portfolio! I am ex-intern with Lendingkart. I
           am a second-year student at Sitare University. I'm a passionate and
           detail-oriented developer. I have a strong understanding of
           technologies and enjoy applying them to solve real-world challenges.
@@ -60,7 +61,7 @@ const About = () => {
       </div>
 
       {/* Right Section: Image */}
-      <div className="flex-1 flex items-center justify-center mt-8 md:mt-0 w-[50vw] md:mr-52 mt-32">
+      <div className="flex-1 flex items-center justify-center mr-8 md:mt-0 w-[50vw] md:mr-52 mt-32">
         <img
           src={"https://avatars.githubusercontent.com/u/143414044?v=4"}
           alt="Rajat Malviya - Portfolio"

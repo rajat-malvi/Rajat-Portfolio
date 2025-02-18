@@ -21,3 +21,58 @@ export let projects = [
       link: "https://your-music-app-link.com"
     }
 ];
+
+//  links for contect
+export const contectLinkes =[
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/yourprofile',
+    iconClass: 'fab fa-linkedin-in',
+    logoUrl: 'https://www.linkedin.com/favicon.ico', // Add the logo URL
+  },
+  {
+    name: 'GitHub',
+    url: 'https://github.com/yourusername',
+    iconClass: 'fab fa-github',
+    logoUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png', // Add the logo URL
+  },
+  {
+    name: 'Hugging Face',
+    url: 'https://huggingface.co/yourusername',
+    iconClass: 'fab fa-hugging-face',
+    logoUrl: 'https://huggingface.co/favicon.ico', // Add the logo URL
+  },
+  {
+    name: 'LeetCode',
+    url: 'https://leetcode.com/yourusername',
+    iconClass: 'fab fa-leetcode',
+    logoUrl: 'https://www.leetcode.com/favicon.ico', // Add the logo URL
+  },
+];
+
+
+
+
+// skills set
+export const skills = [
+  {
+    category: 'Technical Skills',
+    items: [
+      'Frontend Development: React, JavaScript, HTML, CSS, Tailwind CSS',
+      'Backend Development: Node.js, Express, Python',
+      'Version Control: Git, GitHub',
+      'Database Management: MongoDB, PostgreSQL',
+      'Tools & Libraries: Redux, Webpack, Bootstrap, Material-UI',
+    ],
+  },
+  {
+    category: 'Soft Skills',
+    items: [
+      'Problem-solving & Critical Thinking',
+      'Effective Communication & Collaboration',
+      'Adaptability & Continuous Learning',
+      'Time Management & Organization',
+    ],
+  },
+];
+

@@ -1,27 +1,7 @@
 import React from 'react';
+import { skills } from '../config';
 
 function Skills() {
-  const skills = [
-    {
-      category: 'Technical Skills',
-      items: [
-        'Frontend Development: React, JavaScript, HTML, CSS, Tailwind CSS',
-        'Backend Development: Node.js, Express, Python',
-        'Version Control: Git, GitHub',
-        'Database Management: MongoDB, PostgreSQL',
-        'Tools & Libraries: Redux, Webpack, Bootstrap, Material-UI',
-      ],
-    },
-    {
-      category: 'Soft Skills',
-      items: [
-        'Problem-solving & Critical Thinking',
-        'Effective Communication & Collaboration',
-        'Adaptability & Continuous Learning',
-        'Time Management & Organization',
-      ],
-    },
-  ];
 
   return (
     <section id="skills" className="py-16 bg-gray-900 text-white">
